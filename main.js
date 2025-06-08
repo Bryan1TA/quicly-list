@@ -40,4 +40,13 @@ function addItem() {
             </button>
           </div>
         `
-    })""
+    })
+
+    localStorage.setItem("items", JSON.stringify(items))
+}
+
+function checkItem(itemName) {
+   const item = items.find((item) => item.name === itemName)
+   item.checked = !item.checked 
+   showItemsList()
+}
