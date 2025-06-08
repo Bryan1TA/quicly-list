@@ -76,4 +76,7 @@ function removeItem(itemName) {
     if (localStorageItems) {
       items = JSON.parse(localStorageItems)
       showItemsList()
-    } 
+    }
+}
+
+verifyLocalStorageItems() 
