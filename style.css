@@ -136,3 +136,21 @@ main {
             border: 1px solid var(--border-primary);
             border-radius: .6rem;
         }
+        div:has(input:checked) {
+            .custom-checkbox {
+                background: var(--color-brand);
+                border: 1px solid var(--color-brand);
+                transition: .2s;
+            }
+
+            label {
+                text-decoration: line-through;
+            }
+        }
+
+        button {
+            background: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
